@@ -1,2 +1,2 @@
-# ucscenario
+# typescript-npm-cli-template
 

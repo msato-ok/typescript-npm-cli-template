@@ -7,7 +7,16 @@
     "esModuleInterop": true,
     "skipLibCheck": true,
     "declaration": true,
-    "forceConsistentCasingInFileNames": true
+    "forceConsistentCasingInFileNames": true,
+    "baseUrl": "./src"
   },
-  "include": ["src/**/*.ts"]
+  "ts-node": {
+    // Do not forget to `npm i -D tsconfig-paths`
+    "require": [
+      "tsconfig-paths/register"
+    ]
+  },
+  "include": [
+    "src/**/*.ts"
+  ],
 }

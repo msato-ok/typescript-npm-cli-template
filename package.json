@@ -8,7 +8,7 @@
     "bin/**/*"
   ],
   "bin": {
-    "my-command": "./bin/index.js"
+    "cli": "./bin/index.js"
   },
   "scripts": {
     "build": "tsc",
@@ -47,6 +47,7 @@
     "semantic-release": "^19.0.2",
     "ts-jest": "^27.1.3",
     "ts-node": "^10.7.0",
+    "tsconfig-paths": "^4.0.0",
     "typescript": "^4.6.2"
   },
   "dependencies": {

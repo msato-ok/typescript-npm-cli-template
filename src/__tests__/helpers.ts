@@ -42,7 +42,7 @@ export const spawnScript: SpawnFunction<execa.ExecaSyncReturnValue> = (
   args,
   options
 ) => {
-  const result = execa.sync(execPath, args, getExecaOptions(options));
+  const result = execa.execaSync(execPath, args, getExecaOptions(options));
 
   handleTestFailure(execPath, options, result, args);
 

@@ -1,13 +1,15 @@
 version: '3'
 
 services:
-  ucscenario:
+  app:
     build:
       context: .
       dockerfile: ./docker/Dockerfile
-    image: ucscenario
+    image: typescript-npm-cli-template
     volumes:
       - .:/app:z
       - /app/node_modules
     working_dir: /app
-    command: /app/bin
+    command: /app/bin/index.js
+    env_file:
+      - ./.env

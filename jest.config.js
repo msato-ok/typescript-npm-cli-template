@@ -13,4 +13,8 @@ module.exports = {
       diagnostics: false,
     },
   },
+  moduleDirectories: [
+    "src",
+    "node_modules"
+  ],
 };
